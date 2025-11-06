@@ -1,0 +1,31 @@
+namespace:
+  name: sandbox
+ 
+image:
+  repository: gsus09/techtrends 
+  tag: latest
+  pullPolicy: IfNotPresent
+  
+service:
+  port: 4111
+  targetPort: 3111
+  protocol: TCP
+  type: ClusterIP
+
+replicaCount: 1
+containerPort: 3111
+
+livenessProbe:
+  path: /healthz
+  port: 3111
+readinessProbe:
+  path: /healthz
+  port: 3111
+
+resources:
+  requests:
+    cpu: 250m
+    memory: 64Mi
+  limits:
+    cpu: 500m
+    memory: 128Mi
