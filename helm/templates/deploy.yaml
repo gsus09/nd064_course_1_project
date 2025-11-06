@@ -43,8 +43,8 @@ spec:
           periodSeconds: 10
         resources:
           requests:
-            cpu: {{ .Values.requests.cpu }}
-            memory: {{ .Values.requests.memory }}
+            cpu: {{ .Values.resources.requests.cpu }}
+            memory: {{ .Values.resources.requests.memory }}
           limits:
-            cpu: {{ .Values.limits.cpu }}
-            memory: {{ .Values.limits.memory }}
+            cpu: {{ .Values.resources.limits.cpu }}
+            memory: {{ .Values.resources.limits.memory }}
