@@ -7,6 +7,31 @@ docker run -d -p 7111:3111 techtrends
 ## Docker commands used to get the application logs
 docker ps
 docker logs <process-id>
+e.g.: docker logs 76f017e012ce
 
 ## Logs from the container running the TechTrends application
-# TODO: paste logs from the Docker container 
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+172.17.0.1 - - [06/Nov/2025 09:14:38] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [06/Nov/2025 09:14:38] "GET /static/css/main.css HTTP/1.1" 200 -
+172.17.0.1 - - [06/Nov/2025 09:14:38] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:app.py:06/11/2025, 09:17:19, post 2020 CNCF Annual Report retrieved!
+172.17.0.1 - - [06/Nov/2025 09:17:19] "GET /1 HTTP/1.1" 200 -
+172.17.0.1 - - [06/Nov/2025 09:17:19] "GET /static/css/main.css HTTP/1.1" 304 -
+DEBUG:app.py:06/11/2025, 09:17:24, About Us page retrieved
+172.17.0.1 - - [06/Nov/2025 09:17:24] "GET /about HTTP/1.1" 200 -
+172.17.0.1 - - [06/Nov/2025 09:17:24] "GET /static/css/main.css HTTP/1.1" 304 -
+172.17.0.1 - - [06/Nov/2025 09:17:27] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [06/Nov/2025 09:17:27] "GET /static/css/main.css HTTP/1.1" 304 -
+172.17.0.1 - - [06/Nov/2025 09:18:45] "GET /create HTTP/1.1" 200 -
+172.17.0.1 - - [06/Nov/2025 09:18:45] "GET /static/css/main.css HTTP/1.1" 304 -
+DEBUG:app.py:06/11/2025, 09:19:00, New post 'Test Martin ' created!
+172.17.0.1 - - [06/Nov/2025 09:19:00] "POST /create HTTP/1.1" 302 -
+172.17.0.1 - - [06/Nov/2025 09:19:00] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [06/Nov/2025 09:19:00] "GET /static/css/main.css HTTP/1.1" 304 -

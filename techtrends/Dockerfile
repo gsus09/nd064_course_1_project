@@ -5,7 +5,7 @@ FROM python:3.8
 # Set the maintainer label
 LABEL maintainer="Martin Thomas"
 
-COPY ./techtrends /app
+COPY . /app
 # Set the working directory
 WORKDIR /app
 # Install dependencies
