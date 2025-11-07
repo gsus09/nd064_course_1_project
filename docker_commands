@@ -10,6 +10,7 @@ docker logs <process-id>
 e.g.: docker logs 76f017e012ce
 
 ## Logs from the container running the TechTrends application
+ PS C:\Projects\Training\tech_drive_ml\Data_Engeeniering\CloudNativeFundamentals\nd064_course_1_project> docker logs 9f1677642414
  * Serving Flask app 'app' (lazy loading)
  * Environment: production
    WARNING: This is a development server. Do not use it in a production deployment.
@@ -18,20 +19,27 @@ e.g.: docker logs 76f017e012ce
  * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment.
  * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
-172.17.0.1 - - [06/Nov/2025 09:14:38] "GET / HTTP/1.1" 200 -
-172.17.0.1 - - [06/Nov/2025 09:14:38] "GET /static/css/main.css HTTP/1.1" 200 -
-172.17.0.1 - - [06/Nov/2025 09:14:38] "GET /favicon.ico HTTP/1.1" 404 -
-INFO:app.py:06/11/2025, 09:17:19, post 2020 CNCF Annual Report retrieved!
-172.17.0.1 - - [06/Nov/2025 09:17:19] "GET /1 HTTP/1.1" 200 -
-172.17.0.1 - - [06/Nov/2025 09:17:19] "GET /static/css/main.css HTTP/1.1" 304 -
-DEBUG:app.py:06/11/2025, 09:17:24, About Us page retrieved
-172.17.0.1 - - [06/Nov/2025 09:17:24] "GET /about HTTP/1.1" 200 -
-172.17.0.1 - - [06/Nov/2025 09:17:24] "GET /static/css/main.css HTTP/1.1" 304 -
-172.17.0.1 - - [06/Nov/2025 09:17:27] "GET / HTTP/1.1" 200 -
-172.17.0.1 - - [06/Nov/2025 09:17:27] "GET /static/css/main.css HTTP/1.1" 304 -
-172.17.0.1 - - [06/Nov/2025 09:18:45] "GET /create HTTP/1.1" 200 -
-172.17.0.1 - - [06/Nov/2025 09:18:45] "GET /static/css/main.css HTTP/1.1" 304 -
-DEBUG:app.py:06/11/2025, 09:19:00, New post 'Test Martin ' created!
-172.17.0.1 - - [06/Nov/2025 09:19:00] "POST /create HTTP/1.1" 302 -
-172.17.0.1 - - [06/Nov/2025 09:19:00] "GET / HTTP/1.1" 200 -
-172.17.0.1 - - [06/Nov/2025 09:19:00] "GET /static/css/main.css HTTP/1.1" 304 -
+172.17.0.1 - - [07/Nov/2025 12:01:35] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [07/Nov/2025 12:01:35] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:app.py:07/11/2025, 12:01:42, post Kubernetes v1.20 Release Notes retrieved!
+172.17.0.1 - - [07/Nov/2025 12:01:42] "GET /3 HTTP/1.1" 200 -
+172.17.0.1 - - [07/Nov/2025 12:01:42] "GET /static/css/main.css HTTP/1.1" 304 -
+172.17.0.1 - - [07/Nov/2025 12:01:45] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [07/Nov/2025 12:01:45] "GET /static/css/main.css HTTP/1.1" 304 -
+DEBUG:app.py:07/11/2025, 12:01:47, About Us page retrieved
+172.17.0.1 - - [07/Nov/2025 12:01:47] "GET /about HTTP/1.1" 200 -
+172.17.0.1 - - [07/Nov/2025 12:01:47] "GET /static/css/main.css HTTP/1.1" 304 -
+172.17.0.1 - - [07/Nov/2025 12:01:49] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [07/Nov/2025 12:01:49] "GET /static/css/main.css HTTP/1.1" 304 -
+172.17.0.1 - - [07/Nov/2025 12:01:52] "GET /create HTTP/1.1" 200 -
+172.17.0.1 - - [07/Nov/2025 12:01:52] "GET /static/css/main.css HTTP/1.1" 304 -
+DEBUG:app.py:07/11/2025, 12:02:04, New post 'Test1234' created!
+172.17.0.1 - - [07/Nov/2025 12:02:04] "POST /create HTTP/1.1" 302 -
+172.17.0.1 - - [07/Nov/2025 12:02:04] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [07/Nov/2025 12:02:04] "GET /static/css/main.css HTTP/1.1" 304 -
+ERROR:app.py:07/11/2025, 12:02:29, wrong post id 66 requested
+wrong post id 66 requested
+172.17.0.1 - - [07/Nov/2025 12:02:29] "GET /66 HTTP/1.1" 404 -
+172.17.0.1 - - [07/Nov/2025 12:02:29] "GET /static/css/main.css HTTP/1.1" 304 -
+172.17.0.1 - - [07/Nov/2025 12:02:32] "GET / HTTP/1.1" 200 -
+172.17.0.1 - - [07/Nov/2025 12:02:32] "GET /static/css/main.css HTTP/1.1" 304 -
