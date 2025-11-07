@@ -9,10 +9,14 @@ stdout_handler = logging.StreamHandler(sys.stdout)
 stdout_handler.setLevel(logging.DEBUG)
 stdout_handler.setFormatter(logging.Formatter('%(levelname)s:%(filename)s:%(asctime)s, %(message)s',
                                               datefmt='%d/%m/%Y, %H:%M:%S'))
+stderr_handler = logging.StreamHandler(sys.stderr)
+stderr_handler = logging.StreamHandler(sys.stderr)
+stderr_handler.setLevel(logging.ERROR)
 
 logger = logging.getLogger("app")
 logger.setLevel(logging.DEBUG)
 logger.addHandler(stdout_handler)
+logger.addHandler(stderr_handler)
 
 
 db_connection_count = 0
